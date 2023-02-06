@@ -1,0 +1,103 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.card__container {
+  max-width: 375px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.card__item {
+  width: 100%;
+  width: 375px;
+
+  padding: 50px;
+  padding-bottom: 80px;
+}
+.card__item--bgColor1 {
+  background-color: var(--Bright-orange);
+  border-radius: 15px 15px 0 0;
+}
+.card__item--bgColor2 {
+  background-color: var(--Dark-cyan);
+}
+.card__item--bgColor3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 15px 15px;
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+.paragraph {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--Transparent-white-paragraphs);
+  padding-bottom: 40px;
+}
+.link {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.card__item--textColor1 {
+  color: var(--Bright-orange);
+}
+.card__item--textColor2 {
+  color: var(--Dark-cyan);
+}
+.card__item--textColor3 {
+  color: var(--Very-dark-cyan);
+}
+.card__item--bgColor1 a:hover {
+  background-color: var(--Bright-orange);
+  color: var(--Very-light-gray-background-headings-buttons);
+  border: 1px solid white;
+}
+
+.card__item--bgColor2 a:hover {
+  background-color: var(--Dark-cyan);
+  color: var(--Very-light-gray-background-headings-buttons);
+  border: 1px solid white;
+}
+.card__item--bgColor3 a:hover {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-gray-background-headings-buttons);
+  border: 1px solid white;
+}
+
+@media (min-width: 375px) {
+  .card__container {
+    max-width: 1440px;
+    display: flex;
+  }
+  .card__item--bgColor1 {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .card__item--bgColor3 {
+    border-radius: 0 15px 15px 0;
+  }
+}
